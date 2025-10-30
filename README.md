@@ -6,7 +6,7 @@ This project compares **traditional ML models** against a **hybrid deep-learning
 
 ---
 
-## 🎯 Objective
+## Objective
 Compare multiple ML models and a **hybrid Autoencoder + Random Forest** pipeline using **stratified 5-fold cross-validation**, and report **reliable, reproducible performance metrics**.
 
 ---
@@ -119,6 +119,6 @@ These numbers are from the hybrid pipeline where **numeric features** are encode
 
 ---
 ## Conclusion
-This project successfully implemented and rigorously compared traditional ML classifiers against a hybrid Autoencoder-Random Forest pipeline for PCOS detection.
-The key finding is that for this specific (modest-sized) dataset, the standalone **Random Forest** (trained on SMOTENC-resampled and scaled features) achieved the highest cross-validated performance (**~90.75% accuracy**).
-The **Hybrid (Autoencoder + RF) model** performed exceptionally well (**~89.46% accuracy**) and demonstrated a valid, modern approach to feature engineering. However, the overhead and complexity of the deep learning feature extractor did not translate to a performance gain over the classical ML-only pipeline in this instance. This underscores the importance of baselining and demonstrates that a well-processed dataset can often be modeled effectively by robust ensemble methods like Random Forest.
+- This project successfully implemented and rigorously compared traditional ML classifiers against a hybrid Autoencoder-Random Forest pipeline for PCOS detection.
+- The key finding is that for this specific (modest-sized) dataset, the standalone **Random Forest** (trained on SMOTENC-resampled and scaled features) achieved the highest cross-validated performance (**~90.75% accuracy**).
+- The **Hybrid (Autoencoder + RF) model** performed exceptionally well (**~89.46% accuracy**) and demonstrated a valid, modern approach to feature engineering. However, the overhead and complexity of the deep learning feature extractor did not translate to a performance gain over the classical ML-only pipeline in this instance. This underscores the importance of baselining and demonstrates that a well-processed dataset can often be modeled effectively by robust ensemble methods like Random Forest.
